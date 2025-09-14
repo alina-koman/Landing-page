@@ -1,0 +1,118 @@
+.header-box {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.menu {
+    display: flex;
+    margin: 0 auto;
+}
+
+.menu__list {
+    display: flex;
+}
+
+.menu__item a {
+    margin-right: 2rem;
+    color: #4B5D68;
+    line-height: 25px;
+}
+
+.menu__item--active a {
+    color: #4B5D68;
+    font-weight: 800;
+}
+
+.menu-btn {
+    display: none;
+}
+
+@media (max-width:690px){
+    .header-default-button-one  {
+        display: none;
+    }
+
+    .menu {
+        margin: 0 0 0 auto;
+    }
+
+    .menu-btn{
+        display: inline-block;
+        width: 40px;
+        height: 35px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        order: 1;
+        position: relative;
+        z-index: 50;
+    }
+
+    .btn-line{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #9C69E2;
+        height: 2px;
+        transition: .3s ease;
+    }
+
+    .btn-line:nth-child(1){
+        top: 0;
+    }
+
+    .btn-line:nth-child(2){
+        top: 15px;
+    }
+
+    .btn-line:nth-child(3){
+        top: 15px;
+    }
+
+    .btn-line:nth-child(4){
+        top: 30px;
+    }
+
+    .menu-open .btn-line:nth-child(1){
+        transform: scaleX(0);
+    }
+    .menu-open .btn-line:nth-child(2){
+        transform: rotate(45deg);
+    }
+    .menu-open .btn-line:nth-child(3){
+        transform: rotate(-45deg);
+    }
+    .menu-open .btn-line:nth-child(4){
+        transform: scaleX(0);
+    }
+
+    .menu__list{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: #212353;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform: translateY(-100%);
+        transition: .3s ease;
+    }
+
+    .menu-open .menu__list{
+        transform: translateY(0%);
+    }
+
+    .menu__item{
+        padding: 50px 0;
+        font-size: 3rem;
+        font-weight: 800;
+    }
+
+    /*.menu__item--active {*/
+    /*    font-weight: 500;*/
+    /*}*/
+}

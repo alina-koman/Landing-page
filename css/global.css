@@ -1,0 +1,99 @@
+:root {
+    --font-size-md: 1rem;
+    --font-size-sm: 0.875rem;
+    --font-size-xs: 0.75rem;
+}
+
+body {
+    background: linear-gradient(180deg, #F6FAFD 0%, #FFF 19.4%);
+    font-family: Avenir, sans-serif;
+    color: #4B5D68;
+    padding: 50px 20px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Helvetica", sans-serif;
+    color: #212353;
+    font-weight: 700;
+    margin: 0;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+@media screen and (max-width: 500px) {
+    :root {
+        font-size: 12px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    display: block;
+}
+
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+button {
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.default-button-one {
+    border-radius: 50px;
+    background: #FFF;
+    box-shadow: 0 5px 5px 0 rgba(75, 93, 104, 0.10);
+    padding: 17px 0;
+    width: 210px;
+    font-weight: 700;
+    color: #212353;
+    letter-spacing: 0.08px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.default-button-one img {
+    margin-left: 20px;
+}
+
+.default-text{
+    font-size: 1.125rem;
+    font-weight: 500;
+    flex-shrink: 0;
+    line-height: 160%;
+    letter-spacing: 0.005rem;
+}
+
+.default-button-two{
+    border-radius: 50px;
+    background: #9C69E2;
+    font-weight: 500;
+    color: #FFFFFF;
+    width: 150px;
+    padding: 15px 0;
+}
+
