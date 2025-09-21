@@ -1,7 +1,5 @@
 :root {
-    --font-size-md: 1rem;
-    --font-size-sm: 0.875rem;
-    --font-size-xs: 0.75rem;
+    font-size: 16px;
 }
 
 body {
@@ -28,14 +26,28 @@ h2 {
     font-size: 2.5rem;
 }
 
-@media screen and (max-width: 500px) {
-    :root {
-        font-size: 12px;
-    }
+@media screen and (max-width: 985px) {
+    h1 { font-size: 3.5rem; }
+    h2 { font-size: 2.2rem; }
+    body { font-size: 0.95rem;}
 }
+
+@media screen and (max-width: 750px) {
+    h1 { font-size: 3rem; }
+    h2 { font-size: 2rem; }
+    body { font-size: 0.875rem; }
+}
+
+@media screen and (max-width: 500px) {
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 1.8rem; }
+    body { font-size: 0.75rem; }
+}
+
 
 a {
     text-decoration: none;
+    color: #4B5D68;
 }
 
 li {
@@ -74,10 +86,15 @@ button {
     display: flex;
     justify-content: center;
     margin: 0 auto;
+    transition: all .2s linear;
 }
 
 .default-button-one img {
     margin-left: 20px;
+}
+
+.default-button-one:hover {
+    transform: scale(1.1);
 }
 
 .default-text{
@@ -95,5 +112,16 @@ button {
     color: #FFFFFF;
     width: 150px;
     padding: 15px 0;
+    transition: all .2s linear;
+}
+
+.default-button-two:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width:500px) {
+    /**:hover {*/
+    /*    all: unset;*/
+    /*}*/
 }
 

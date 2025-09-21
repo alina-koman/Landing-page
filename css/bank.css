@@ -9,6 +9,7 @@
     max-width: 1100px;
     justify-content: space-around;
     align-items: center;
+    padding: 10px;
 }
 
 .bank__box{
@@ -17,4 +18,26 @@
 
 .bank__title {
     margin-bottom: 50px;
+}
+
+.bank-img{
+    width: 50%;
+}
+
+
+@media (max-width: 815px) {
+    .bank__title {
+        margin-bottom: 25px;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 750px) {
+    .bank__inner {
+        padding: 25px 20px;
+        flex-wrap: wrap-reverse;
+        max-width: 600px;
+        margin: auto;
+    }
 }
